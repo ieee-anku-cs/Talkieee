@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/GreyLight"
+
+>
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="204dp"
+            android:background="@drawable/rounded_text_register_login"
+            android:layout_height="50dp"
+            android:paddingLeft="70dp"
+            android:paddingTop="15dp"
+            android:id="@+id/notification_text"
+            app:layout_constraintStart_toEndOf="@+id/notification_admin_url"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+            android:layout_width="88dp"
+            android:layout_height="79dp" app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
+            android:id="@+id/notification_admin_url" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+            android:text="Reply"
+            android:background="@drawable/rounded_button_notifications"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:id="@+id/notification_reply_button"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@+id/notification_text"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
